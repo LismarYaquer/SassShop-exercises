@@ -19,15 +19,17 @@
     }
   }
   
-  
-  
-  .clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
   .wrapper {
+    @extend %clearfix;
     margin: 0 auto;
     width: $page-width;
+  }
+
+  .subcontent {
+    background: #fff;
+    padding: 2em 0 3em;
+  }
+  
+  .search {
+    float: right;
   }

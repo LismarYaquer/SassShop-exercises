@@ -1,3 +1,8 @@
+.wrapper:after {
+  content: "";
+  display: table;
+  clear: both; }
+
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -13,14 +18,16 @@ a {
   a:hover {
     color: #AEA4AD; }
 
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both; }
-
 .wrapper {
   margin: 0 auto;
   width: 1200px; }
+
+.subcontent {
+  background: #fff;
+  padding: 2em 0 3em; }
+
+.search {
+  float: right; }
 
 .header {
   background: #AEA4AD;
@@ -29,15 +36,11 @@ a {
   .header nav {
     float: right; }
     .header nav ul {
-      list-style-type: none;
       padding: 0; }
-    .header nav li {
-      display: inline-block; }
     .header nav a {
       background: #506F8E;
       border-radius: 20px;
       color: #EEE4DA;
-      display: block;
       margin-right: 1em;
       padding: .5em 1em;
       text-decoration: none; }
@@ -83,20 +86,23 @@ a {
     float: left; }
     .footer nav a {
       color: #AEA4AD;
-      display: block;
       padding: 1em; }
       .footer nav a:hover {
         color: #D9D0CB; }
     .footer nav ul {
-      list-style-type: none;
       margin: 0;
       padding: 0; }
-    .footer nav li {
-      display: inline-block; }
   .footer .copy {
     color: #D9D0CB;
     float: right;
     margin: 1em 0; }
+
+.navlist--inline, .header nav ul, .footer nav ul {
+  list-style-type: none; }
+  .navlist--inline li, .header nav ul li, .footer nav ul li {
+    display: inline-block; }
+  .navlist--inline a, .header nav ul a, .footer nav ul a {
+    display: block; }
 
 .info {
   float: left;
