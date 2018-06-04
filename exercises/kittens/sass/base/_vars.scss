@@ -1,12 +1,24 @@
 /* colores */
-$a-color : #506F8E;
-$ahover-color : #AEA4AD;
+$blue : #506F8E;
+$purple : #AEA4AD;
+$beige : #D9D0CB;
+$tan : #EEE4DA;
+$white : #fff;
 
-$bg-color : #EEE4DA;
+$dark-blue : darken($blue, 10);
 
-$header-title : #D9D0CB;
+/* fonts */
+$base-font-family : 'Didact Gothic', sans-serif;
+$logo-font-family : 'Ribeye Marrow', cursive;
 
-/* border */
+/* widths */
 
 $border-width : 10px;
 $border-radius : 20px;
+
+$page-width : 1200px;
+$kitten-width : $page-width / 4;
+$location-width : 20%;
+$info-width : (100 - $location-width) /2;
+
+$scale : 1.1;

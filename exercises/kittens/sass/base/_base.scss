@@ -6,18 +6,20 @@
   }
   
   body {
-    background: $bg-color;
-    font-family: 'Didact Gothic', sans-serif;
+    background: $tan;
+    font-family: $base-font-family;
     margin: 0;
   }
   
   a {
-    color: $a-color;
+    color: $blue;
+
+    &:hover {
+      color: $purple;
+    }
   }
   
-  a:hover {
-    color: $ahover-color;
-  }
+  
   
   .clearfix:after {
     content: "";
@@ -27,5 +29,5 @@
   
   .wrapper {
     margin: 0 auto;
-    width: 1200px;
+    width: $page-width;
   }

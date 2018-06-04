@@ -1,25 +1,25 @@
 
 .header {
-    background: $ahover-color;
-    border-bottom: $border-width solid #fff;
+    background: $purple;
+    border-bottom: $border-width solid $white;
     padding: 1em;
   
-    & nav {
+     nav {
       float: right;
   
-      & ul {
+       ul {
         list-style-type: none;
         padding: 0;
       }
   
-      & li {
+      li {
         display: inline-block; 
       }
   
-      & a {
-        background: $a-color;
+      a {
+        background: $blue;
         border-radius: $border-radius;
-        color: $bg-color;
+        color: $tan;
         display: block;
         margin-right: 1em;
         padding: .5em 1em;
@@ -31,15 +31,16 @@
           -o-transform: scale(1.1);
           -ms-transform: scale(1.1);
           transform: scale(1.1);
+          background-color: $dark-blue;
         }
       }
     }
   
-    & h1 {
-      color: $a-color;
-      font-family: 'Ribeye Marrow', cursive;
+    h1 {
+      color: $blue;
+      font-family: $logo-font-family;
       font-size: 3em;
       margin: .25em 0;
-      text-shadow: 1px 1px 0px $header-title;
+      text-shadow: 1px 1px 0px $beige;
     }
   }
