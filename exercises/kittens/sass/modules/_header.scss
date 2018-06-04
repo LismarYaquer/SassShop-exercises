@@ -1,0 +1,45 @@
+
+.header {
+    background: $ahover-color;
+    border-bottom: $border-width solid #fff;
+    padding: 1em;
+  
+    & nav {
+      float: right;
+  
+      & ul {
+        list-style-type: none;
+        padding: 0;
+      }
+  
+      & li {
+        display: inline-block; 
+      }
+  
+      & a {
+        background: $a-color;
+        border-radius: $border-radius;
+        color: $bg-color;
+        display: block;
+        margin-right: 1em;
+        padding: .5em 1em;
+        text-decoration: none;
+  
+        &:hover {
+          -webkit-transform: scale(1.1);
+          -moz-transform: scale(1.1);
+          -o-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+          transform: scale(1.1);
+        }
+      }
+    }
+  
+    & h1 {
+      color: $a-color;
+      font-family: 'Ribeye Marrow', cursive;
+      font-size: 3em;
+      margin: .25em 0;
+      text-shadow: 1px 1px 0px $header-title;
+    }
+  }

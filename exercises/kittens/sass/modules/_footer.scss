@@ -1,0 +1,36 @@
+
+.footer {
+    background: $a-color;
+    border-top: $border-width solid $bg-color;
+  
+    & .copy {
+      color: $header-title;
+      float: right; 
+      margin: 1em 0;
+    }
+  
+    & nav {
+      float: left;
+  
+      & ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+  
+      & li {
+        display: inline-block;
+      }
+  
+      & a {
+        color: $ahover-color;
+        display: block;
+        padding: 1em;
+  
+        &:hover {
+          color: $header-title;
+        }
+      }
+    }
+  }
+  

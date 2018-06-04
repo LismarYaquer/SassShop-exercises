@@ -1,0 +1,58 @@
+
+.subcontent {
+    background: #fff;
+    padding: 2em 0 3em;
+  }
+  
+  .search {
+    float: right;
+  }
+  
+  .news, .events, .location {
+    float: left;
+    padding-right: 4em;
+    width: 40%;
+  }
+  
+  .news ul, .events ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .news li, .events li {
+    border-bottom: 1px dotted $bg-color;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    padding-right: 1em;
+  }
+  
+  .news li a, .events li a {
+    font-size: 1.25em;
+    text-decoration: none;
+  }
+  
+  .news .btn, .events .btn {
+    color: $ahover-color;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .news .btn:hover, .events .btn:hover {
+    color: $a-color;
+  }
+  
+  .location {
+    padding-right: 0;
+    width: 20%;
+  }
+  
+  .location dt {
+    color: $a-color;
+    font-weight: bold;
+  }
+  
+  .location dd {
+    margin: 0;
+  }
+  
